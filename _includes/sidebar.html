@@ -27,8 +27,7 @@
     {% endfor %}
 
     <a class="sidebar-nav-item" href="{{ site.github.repo }}/Resume_BumjunPark.pdf">CV</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
-    <div id="contact-list">
+    <div class="sidebar-nav-item" id="contact-list" style="font-size: 36px; text-align: center;">
       {% assign sm = site.data.social-media %}
       {% for entry in sm %}
       {% assign key = entry | first %}
