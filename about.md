@@ -3,6 +3,12 @@ layout: page
 title: Bio
 ---
 
+
+<p align = "center"><img src="/photo.png" 
+    alt="Personal Photo" 
+    style="height: 200px; width:200px;"
+    align = center/> </p>
+
 <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>
