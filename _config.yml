@@ -1,6 +1,7 @@
 # Setup
 title:               Bumjun Park
 tagline:             'Statistics Major @ University of Wisconsin-Madison'
+description: '<p align = "center"><img src="/photo.png" alt="Personal Photo" style="height: 200px; width:200px;" align = center/></p> <p>An undergraduate Statistics major at the University of Wisconsin-Madison. Certificates in Mathematics and Economic Analytics</p>'
 url:                 https://bpark67.github.io/
 baseurl:             ''
 paginate:            5

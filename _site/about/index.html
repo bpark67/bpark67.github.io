@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  <head>
+<head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
   <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
   <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
     href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
@@ -33,16 +33,24 @@
   
 </head>
 
-  <body>
+<body class="theme-base-0g">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104156586-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+    gtag('config', 'UA-104156586-1');
+</script>
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>Bumjun's Personal Website</p>
+    <p><p align = "center"><img src="/photo.png" alt="Personal Photo" style="height: 200px; width:200px;" align = center/></p> <p>An undergraduate Statistics major at the University of Wisconsin-Madison. Certificates in Mathematics and Economic Analytics</p></p>
   </div>
 
   <nav class="sidebar-nav">
@@ -103,20 +111,20 @@
   </div>
 </div>
 
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">Bumjun Park</a>
-            <small>Statistics Major @ University of Wisconsin-Madison</small>
-          </h3>
-        </div>
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Bumjun Park</a>
+          <small>Statistics Major @ University of Wisconsin-Madison</small>
+        </h3>
       </div>
+    </div>
 
-      <div class="container content">
-        <div class="page">
+    <div class="container content">
+      <div class="page">
   <h1 class="page-title">Bio</h1>
   <p align="center"><img src="/photo.png" alt="Personal Photo" style="height: 200px; width:200px;" align="center" /> </p>
 
@@ -151,11 +159,12 @@
 
 </div>
 
-      </div>
     </div>
+  </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    <script src='/public/js/script.js'></script>
-  </body>
+  <script src='/public/js/script.js'></script>
+</body>
+
 </html>
