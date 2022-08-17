@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "About"
 permalink: https://bpark67.github.io/about
 ---
