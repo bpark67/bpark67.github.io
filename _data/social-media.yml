@@ -1,0 +1,11 @@
+email:
+  id: 'bpark67@wisc.edu'
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa-envelope-square'
+
+github:
+  id: 'bpark67'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa-github-square'
