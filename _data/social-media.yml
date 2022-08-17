@@ -9,3 +9,9 @@ github:
   href: 'https://github.com/'
   title: 'GitHub'
   fa-icon: 'fa-github-square'
+
+linkedin:
+  id: 'bumjun-park-4b8398241'
+  href: 'https://www.linkedin.com/in/'
+  title: 'LinkedIn'
+  fa-icon: 'fa-linkedin-square'
