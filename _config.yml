@@ -6,6 +6,7 @@ baseurl:             ''
 paginate:            5
 permalink:           pretty
 
+# description:...
 # About/contact
 author:
   name:              Bumjun Park
