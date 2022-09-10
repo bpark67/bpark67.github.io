@@ -70,7 +70,7 @@ If there are no output messages, then the `pandas` dataframe is final and ready 
 
 > There are still missing entries. Please fill manually with manual_filler
 
-In this case, the user must find an address that Nominatim(OpenStreetMap) can process.
+In this case, the user must use the second option, which is to fill in the address manually. The user must find an address that Nominatim(OpenStreetMap) can process.
 
 ```python
 manual_dict = {"AL0001368": "Deer Park, Alabama"}

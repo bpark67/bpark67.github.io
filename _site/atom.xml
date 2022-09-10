@@ -4,7 +4,7 @@
  <title>Bumjun Park</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2022-09-09T21:27:34-05:00</updated>
+ <updated>2022-09-09T21:29:31-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Bumjun Park</name>
@@ -134,7 +134,7 @@
   &lt;p&gt;There are still missing entries. Please fill manually with manual_filler&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;In this case, the user must find an address that Nominatim(OpenStreetMap) can process.&lt;/p&gt;
+&lt;p&gt;In this case, the user must use the second option, which is to fill in the address manually. The user must find an address that Nominatim(OpenStreetMap) can process.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;manual_dict&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;AL0001368&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Deer Park, Alabama&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;locator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;manual_filler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;manual_dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
