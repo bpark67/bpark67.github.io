@@ -1,0 +1,10 @@
+---
+layout: post
+title: Poster Presentation for PFAS Project
+---
+
+I presented at the [Water@UW-Madison 2022 Fall Art and Poster Session](https://water.wisc.edu/fall-2022-art-and-poster-session-reception/).
+
+Here is the abstract and a [link](./Poster_Bumjun_pdf_revised.pdf) to the poster!
+
+> Per- and polyfluoroalkyl substances (PFAS) are a group of synthetic pollutants that have been increasingly found in groundwater in communities across the United States, and thus have been drawing growing interest and concern. The concentration of PFAS in water systems is influenced by a multitude of factors, namely the proximity to airports, military bases, landfills, wastewater treatment plants, or an assortment of manufacturing facilities, as well as geographic conditions such as the climate or population density. In this work, a random forest machine learning model accounting for these factors is applied to assess the likelihood of having hazardous levels of PFAS concentration, greater than 50 parts per trillion, in various geographic points across the contiguous United States. Trained from a compilation of 10,026 data points gathered from different sources, the model suggests that among the most important indicators of PFAS contamination are distance to textile mills, distance to apparel manufacturers, or distance to leather manufacturers. Further geospatial analysis is conducted by interpolating the model's predictions to 20,000 randomly sampled points within the contiguous United States using Triangulated Irregular Network (TIN), and then creating a national risk map that highlights the areas with highest predicted probabilities. The risk map successfully captures regions of known PFAS risks such as Saint Paul, Minnesota and Parkersburg, West Verginia. The risk map can serve as a guideline for future water sampling investigations into PFAS contamination for different agencies and policymakers.
