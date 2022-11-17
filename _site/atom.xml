@@ -4,13 +4,28 @@
  <title>Bumjun Park</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2022-09-09T21:30:48-05:00</updated>
+ <updated>2022-11-16T21:32:39-06:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Bumjun Park</name>
    <email>bpark67@wisc.edu</email>
  </author>
 
+ 
+ <entry>
+   <title>Poster Presentation for PFAS Project</title>
+   <link href="http://localhost:4000/2022/11/07/presentation/"/>
+   <updated>2022-11-07T00:00:00-06:00</updated>
+   <id>http://localhost:4000/2022/11/07/presentation</id>
+   <content type="html">&lt;p&gt;I presented at the &lt;a href=&quot;https://water.wisc.edu/fall-2022-art-and-poster-session-reception/&quot;&gt;Water@UW-Madison 2022 Fall Art and Poster Session&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is the abstract and a &lt;a href=&quot;./Poster_Bumjun_pdf_revised.pdf&quot;&gt;link&lt;/a&gt; to the poster!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Per- and polyfluoroalkyl substances (PFAS) are a group of synthetic pollutants that have been increasingly found in groundwater in communities across the United States, and thus have been drawing growing interest and concern. The concentration of PFAS in water systems is influenced by a multitude of factors, namely the proximity to airports, military bases, landfills, wastewater treatment plants, or an assortment of manufacturing facilities, as well as geographic conditions such as the climate or population density. In this work, a random forest machine learning model accounting for these factors is applied to assess the likelihood of having hazardous levels of PFAS concentration, greater than 50 parts per trillion, in various geographic points across the contiguous United States. Trained from a compilation of 10,026 data points gathered from different sources, the model suggests that among the most important indicators of PFAS contamination are distance to textile mills, distance to apparel manufacturers, or distance to leather manufacturers. Further geospatial analysis is conducted by interpolating the model’s predictions to 20,000 randomly sampled points within the contiguous United States using Triangulated Irregular Network (TIN), and then creating a national risk map that highlights the areas with highest predicted probabilities. The risk map successfully captures regions of known PFAS risks such as Saint Paul, Minnesota and Parkersburg, West Verginia. The risk map can serve as a guideline for future water sampling investigations into PFAS contamination for different agencies and policymakers.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
  
  <entry>
    <title>PWS Helper Package Released</title>
