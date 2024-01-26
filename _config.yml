@@ -2,7 +2,7 @@ url: https://y7kim.github.io
 baseurl: /agency-jekyll-theme/
 
 # Site settings
-title: Main
+title: BP
 email: bpark67@uw.edu
 description: "Personal webiste for Bumjun Park, Ph.D. Student, Department of Biostatistics, University of Washington"
 
@@ -12,8 +12,8 @@ people:
 - name:
   pic: #
 - name: Bumjun Park
-  pic: 1
-  position: Lead Designer
+  pic: 4
+  position: Ph.D. Student
   social:
     - title: twitter
       url: #
@@ -35,10 +35,6 @@ social:
   - title: github
     url: http://github.com/jekyll
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
 
 # Build settings
 markdown: kramdown
