@@ -1,15 +1,14 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Groundwater Contamination of Per- and Polyfluoroalkyl Substances in the United States⎯ Insights from a Random Forest Model
+subtitle: Poster
 layout: default
 modal-id: 1
-date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+date: 2022-11-07
+img: rf-full.png
+thumbnail: rf.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+project-date: November 2022
+category: Spatial, Environmental
+description: Per- and polyfluoroalkyl substances (PFAS) are a group of synthetic pollutants that have been increasingly found in groundwater in communities across the United States, and thus have been drawing growing interest and concern. The concentration of PFAS in water systems is influenced by a multitude of factors, namely the proximity to airports, military bases, landfills, wastewater treatment plants, or an assortment of manufacturing facilities, as well as geographic conditions such as the climate or population density. In this work, a random forest machine learning model accounting for these factors is applied to assess the likelihood of having hazardous levels of PFAS concentration, greater than 50 parts per trillion, in various geographic points across the contiguous United States. Trained from a compilation of 10,026 data points gathered from different sources, the model suggests that among the most important indicators of PFAS contamination are distance to textile mills, distance to apparel manufacturers, or distance to leather manufacturers. Further geospatial analysis is conducted by interpolating the model's predictions to 20,000 randomly sampled points within the contiguous United States using Triangulated Irregular Network (TIN), and then creating a national risk map that highlights the areas with highest predicted probabilities. The risk map successfully captures regions of known PFAS risks such as Saint Paul, Minnesota and Parkersburg, West Verginia. The risk map can serve as a guideline for future water sampling investigations into PFAS contamination for different agencies and policymakers.
 
 ---

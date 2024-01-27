@@ -15,25 +15,22 @@ people:
   pic: 4
   position: Ph.D. Student
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
+    - title: linkedin
+      url: https://www.linkedin.com/in/bumjun-park-4b8398241/
+    - title: github
+      url: http://github.com/bpark67
     - title: stack-overflow
-      url: #
+      url: https://stackoverflow.com/users/19822406/themoonandsixpence
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
+  - title: linkedin
+    url: https://www.linkedin.com/in/bumjun-park-4b8398241/
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/bpark67
+  - title: stack-overflow
+    url: https://stackoverflow.com/users/19822406/themoonandsixpence
+
 
 
 # Build settings
