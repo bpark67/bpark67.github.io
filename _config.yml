@@ -1,5 +1,5 @@
 url: https://bpark67.github.io
-baseurl: /personal-webstie
+baseurl: /personal-website
 
 # Site settings
 title: Bumjun Park
@@ -10,7 +10,6 @@ description: "Personal webiste for Bumjun Park, Ph.D. Student, Department of Bio
 # Team names, titles and social links
 people:
 - name:
-  pic: #
 - name: Bumjun Park
   pic: 4
   position: Ph.D. Student

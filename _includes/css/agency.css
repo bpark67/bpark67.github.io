@@ -176,7 +176,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Ubuntu","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.data.template.color.primary }};
 }
 
@@ -287,13 +287,12 @@ header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 22px;
-    font-style: italic;
+    font-style: normal;
     line-height: 22px;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-size: 50px;
     font-weight: 700;
@@ -310,13 +309,12 @@ header .intro-text .intro-heading {
         margin-bottom: 25px;
         font-family: {{ site.data.template.font.secondary }};
         font-size: 40px;
-        font-style: italic;
+        font-style: normal;
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
         font-size: 75px;
         font-weight: 700;
