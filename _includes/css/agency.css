@@ -372,7 +372,7 @@ section h3.section-subheading {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
+    background: rgba(211, 202, 151, 0.9); /* Fallback when no plugin support */
     background: rgba({{ site.data.template.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
@@ -387,7 +387,7 @@ section h3.section-subheading {
     height: 20px;
     margin-top: -12px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
 }
 
@@ -404,20 +404,23 @@ section h3.section-subheading {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
-    text-align: center;
+    text-align: left;
     background-color: #fff;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
+    font-size: 16px;
+    font-style: normal;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: {{ site.data.template.font.secondary }};
+    text-align: center;
     font-size: 16px;
-    font-style: italic;
+    font-style: normal;
 }
 
 #portfolio * {
