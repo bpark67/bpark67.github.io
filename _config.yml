@@ -11,12 +11,14 @@ people:
   pic: 5
   position: Ph.D. Student
   social:
-    - title: linkedin
+    - title: linkedin-in
       url: https://www.linkedin.com/in/bumjun-park-4b8398241/
-    - title: github
+    - title: github-alt
       url: http://github.com/bpark67
     - title: stack-overflow
       url: https://stackoverflow.com/users/19822406/themoonandsixpence
+    - title: orcid
+      url: https://orcid.org/0009-0008-0361-3810
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:

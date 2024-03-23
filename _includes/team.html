@@ -1,87 +1,93 @@
 <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
-            </div>
-            <div class="row">
-                {% for member in site.people %}
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}">
-                                    <i class="fa fa-{{ network.title }}"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
-
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Hi! My name is Bumjun Park. I am from Seongnam, South Korea, and I am a doctoral student in Biostatistics at the University of Washington. I am a graduate of the University of Wisconsin-Madison with a degree in Statistics and certificates in Mathematics and Economic Analytics. I am a native speaker of English and Korean, with competencies in French and Spanish. My academic interests include spatial statistics, environmental statistics, biostatistics and econometrics.</p>
-                </div>
+<section id="team" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About Me</h2>
             </div>
         </div>
-        <hr>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
+        <div class="row">
+            {% for member in site.people %}
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="img/team/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
+                    <h4>{{ member.name }}</h4>
+                    <p class="text-muted">{{ member.position }}</p>
+                    <ul class="list-inline social-buttons">
+                        {% for network in member.social %}
                         <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/hafs.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2015- February 2018</h4>
-                                    <h4 class="subheading">Hankuk Academy of Foreign Studies</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">International Department</p>
-                                </div>
-                            </div>
+                            <a href="{{ network.url }}">
+                                <i class="fa-brands fa-{{ network.title }}"></i>
+                            </a>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/wisc_rescale.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>September 2018 - May 2023</h4>
-                                    <h4 class="subheading">University of Wisconsin-Madison</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">BS in Statistics <br> Certificate in Mathematics, Economic Analytics</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/wash_rescale.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>September 2023 -</h4>
-                                    <h4 class="subheading">University of Washington</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Ph.D. Student in Biostatistics</p>
-                                </div>
-                            </div>
-                        </li>
+                        {% endfor %}
+
                     </ul>
                 </div>
             </div>
+            {% endfor %}
         </div>
-    </section>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="large text-muted">Hi! My name is Bumjun Park. I am from Seongnam, South Korea, and I am a
+                    doctoral student in Biostatistics at the University of Washington. I am a graduate of the University
+                    of Wisconsin-Madison with a degree in Statistics and certificates in Mathematics and Economic
+                    Analytics. I am a native speaker of English and Korean, with competencies in French and Spanish. My
+                    academic interests include spatial statistics, environmental statistics, biostatistics and
+                    econometrics.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/hafs.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2015- February 2018</h4>
+                                <h4 class="subheading">Hankuk Academy of Foreign Studies</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">International Department</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/wisc_rescale.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>September 2018 - May 2023</h4>
+                                <h4 class="subheading">University of Wisconsin-Madison</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">BS in Statistics <br> Certificate in Mathematics, Economic
+                                    Analytics</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/wash_rescale.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>September 2023 -</h4>
+                                <h4 class="subheading">University of Washington</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Ph.D. Student in Biostatistics</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
