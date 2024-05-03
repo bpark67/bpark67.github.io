@@ -1,11 +1,15 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: e8e3d3
-  secondary: FEFEFE
-  secondary-dark: 333
+  primary: 967259
+  secondary: ece0d1
+  secondary-dark: 38220f
   muted: 777
 
 # Font Families
+# Font options for the website
 font:
-  primary: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: '"Kanit", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  # Primary font used for headings and main text
+  primary: 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
+
+  # Secondary font used for special elements or accents
+  secondary: '"Kanit", "Helvetica Neue", Helvetica, Arial, sans-serif'
