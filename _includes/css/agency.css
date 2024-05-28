@@ -57,6 +57,10 @@ h6 {
     font-weight: 700;
 }
 
+.img-centered2 {
+    margin: 0 auto;
+}
+
 .img-centered {
     margin: 0 auto;
     height: 200px;
