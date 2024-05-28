@@ -362,6 +362,7 @@ section h3.section-subheading {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+    max-height: 250px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -404,6 +405,7 @@ section h3.section-subheading {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
+    max-height: 240px;
     text-align: left;
     background-color: #fff;
 }
@@ -866,3 +868,53 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+.block {
+    margin-left: 25px;
+    border-left: 5px solid #ddd;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.abstract, .introduction {
+overflow: auto;
+}
+.abstract .right p {
+font-style: italic;
+margin: 0;
+}
+.publication {
+margin-top: 10px;
+padding-bottom: 2px;
+line-height: 1.25;
+}
+.project_img {
+margin-right: 20px;
+float: left;
+width: 250px;
+}
+
+.research_title {
+color: #555;
+font-weight: bold;
+font-size: 18px;
+}
+
+.right {
+    margin-right: 10px;
+    line-height: 1.5;
+  }
+
+span.emph {
+color: #555;
+font-weight: bold;
+}
+
+.subtitle {
+    color: #555;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
