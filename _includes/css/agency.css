@@ -59,6 +59,9 @@ h6 {
 
 .img-centered {
     margin: 0 auto;
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
 }
 
 .bg-light-gray {
@@ -405,7 +408,7 @@ section h3.section-subheading {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
-    max-height: 240px;
+    height: 100px;
     text-align: left;
     background-color: #fff;
 }
