@@ -1,5 +1,5 @@
 ---
-title: Groundwater Contamination of Per- and Polyfluoroalkyl Substances in the United States⎯ Insights from an Ecological Sampling Bias Correction Method
+title: American Water Resources Association - Wisconsin Section
 subtitle: Poster
 layout: default
 modal-id: 2
@@ -8,7 +8,7 @@ img: ipp-full.png
 thumbnail: ipp.png
 alt: image-alt
 project-date: March 2023
-category: Spatial, Environmental
+category: Spatial Statistics, Environmental Statistics, PFAS 
 description: Per- and polyfluoroalkyl substances (PFAS) are a group of synthetic pollutants that have been increasingly found in groundwater in communities across the United States, and thus have been drawing growing interest and concern. The concentration of PFAS in water systems is influenced by a multitudes of factors, namely the proximity to airports, military bases, landfills, manufacturing facilities, extent of industrialization, and hydrologic conditions. In this work, methods of ecological sampling are used to account for both the distribution of PFAS and the sampling biases. Certain areas are more likely than other areas to be tested for PFAS, which, if unaccounted for, leads to an overrepresentation of PFAS risk in that region. Treating PFAS as an ecological species, the “population distribution” is measured in various geographic points across the contiguous United States. Further geospatial analysis is conducted by interpolating the model's predictions to create a national distribution map that highlights the most susceptible areas. The risk map can serve as a guideline for future water sampling investigations into PFAS contamination for different agencies and policymakers.
 
 ---
