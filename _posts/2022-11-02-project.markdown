@@ -1,0 +1,13 @@
+---
+title: Planetary Health Alliance Annual Meeting
+subtitle: Poster
+layout: default
+modal-id: 1
+date: 2022-11-02
+img: malaria-full.png
+thumbnail: malaria.png
+alt: image-alt
+project-date: November 2022
+category: Spatial Statistics, Epidemiology, Malaria
+description: The relationship between forest cover loss and infectious disease risk is poorly understood and needs further investigation, particularly in sub-Saharan Africa, and with regards to the effect to vulnerable populations—namely, children. The proposed research examines ecological determinants of malarial disease by investigating the linkage between forest cover change and in Kenya using a total population incidence indicator, and a pediatric prevalence indicator.
+---
