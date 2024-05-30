@@ -9,7 +9,7 @@ color:
 # Font options for the website
 font:
   # Primary font used for headings and main text
-  primary: 'Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif'
+  primary: '"Raleway", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif'
 
   # Secondary font used for special elements or accents
-  secondary: '"Kanit", "Helvetica Neue", Helvetica, Arial, sans-serif'
+  secondary: '"Nunito Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif'

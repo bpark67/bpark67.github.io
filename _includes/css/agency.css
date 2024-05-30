@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "DejaVu Sans Mono", monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -274,7 +274,7 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: center;
-    color: #fff;
+    color: #e8e3d3;
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/Profile.jpg');
     background-position: center center;
