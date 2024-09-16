@@ -6,9 +6,8 @@ description: "Personal webiste for Bumjun Park, Ph.D. Student, Department of Bio
 
 # Team names, titles and social links
 people:
-- name:
 - name: Bumjun Park
-  pic: 5
+  pic: 8
   position: Ph.D. Student
   social:
     - title: linkedin-in
