@@ -1,0 +1,15 @@
+---
+title: UW Biostat Student Seminar
+subtitle: Presentation
+layout: default
+modal-id: 4
+date: 2024-10-02
+img: vwibig.png
+thumbnail: vwismall.png
+alt: image-alt
+project-date: October 2024
+category: Presentation
+description: Functional data refers to information that can be represented as smooth functions. Examples include measurements of brain activity over time and spatially distributed data such as brain imaging signals on the cortical surface.  The analysis of functional data is challenging because these functions are typically observed only through noisy, sparse, and irregular measurements. With the surge of availability in data that is functional by nature, analyzing the covariation structure between multiple functional variables and reducing the dimensionality of such data, has become of greater interest, thereby leading to the development of Multivariate Functional Principal Component Analysis (MFPCA), among other methods. In this work, we propose using MFPCA to develop a function-on-function regression model, that is a model where both the predictors and the outcome are functions. This model estimates a ‘beta’ matrix of coefficients that captures the dependence of the outcome on the predictors. We apply our method to Vessel Wall Imaging measurements of plaques collected from patients suffering from intracranial artery stenosis, the narrowing of a brain artery. By analyzing various measures of vessel width, the proposed model allows us to characterize the association between vessel wall features at baseline (modeled as the predictor) and those at a second time point (modeled as the outcome), offering potential insights into the progression of vascular conditions in those suffering from stenosis.
+keywords: Functional Data Analysis
+
+---
