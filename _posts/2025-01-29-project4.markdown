@@ -1,0 +1,14 @@
+---
+title: UW Biostat Student Seminar
+subtitle: Presentation
+layout: default
+modal-id: 5
+date: 2025-01-29
+img: fdrbig.png
+thumbnail: fdrsmall.png
+alt: image-alt
+project-date: January 2025
+category: Presentation
+description: Microbiome research often involves high-dimensional data, where detecting network structures or topologies among taxa is essential for understanding microbial interactions. However, the complexity of such data introduces a significant risk of false discoveries, making robust statistical control imperative. This presentation focuses on multiple testing methods designed to control the False Discovery Rate (FDR), a critical measure balancing discovery and reliability in hypothesis testing. I will motivate the use of FDR in this context, introduce a range of methods available for its control, and evaluate their performance through numerical analysis. This presentation aims to provide a holistic review of why and how we must account for multiple testing by exploring their applicability and effectiveness in microbiome network detection. This presentation is based on my research with Professor Jing Ma at the Fred Hutchinson Cancer Center.
+keywords: Microbiome
+---
