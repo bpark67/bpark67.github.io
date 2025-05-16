@@ -1,0 +1,14 @@
+---
+title: UW Biostat Student-Invited Speaker Poster Session
+subtitle: Poster
+layout: default
+modal-id: 6
+date: 2025-05-16
+img: mfpcabig.png
+thumbnail: mfpcasmall.png
+alt: image-alt
+project-date: May 2025
+category: Poster
+description: Tracking how vessel wall features evolve over time is crucial for understanding stroke development. This poster presents a statistical framework for modeling such longitudinal changes using sparse and irregular multivariate functional data. We propose a two-step approach that builds on Multivariate Functional Principal Component Analysis (MFPCA) and Functional Linear Regression (FLR). Our method extends the MFPCA framework of Happ and Greven (2018) to accommodate sparsely observed curves within each functional domain. We demonstrate its utility on Vessel Wall Imaging (VWI) data from the WALLI study, which captures two measures of brain vessels at two time points. Through functional regression, we estimate a regression surface that maps vessel wall features from baseline to follow-up. Our method offers an interpretable characterization of temporal covariation between vessel wall measures. It is particularly suited for real-world imaging studies with irregular sampling and can support prediction of vessel wall progression.
+keywords: Functional Data Analysis
+---
