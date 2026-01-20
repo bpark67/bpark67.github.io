@@ -1,0 +1,31 @@
+- title: "Statistical Mapping of PFOA and PFOS in Groundwater Throughout the Contiguous United States"
+  image: "img/plot-pfas.png"
+  authors:
+    - name: "B. Park"
+      is_self: true
+    - name: "H. Kang"
+      link: "https://pages.cs.wisc.edu/~hyunseung/"
+    - name: "C. Zahasky"
+      link: "https://zahasky.geoscience.wisc.edu/"
+  year: 2024
+  journal: "Environmental Science and Technology"
+  abstract: >
+    Per-and polyfluoroalkyl substances (PFAS) are synthetic chemicals that are increasingly being
+    detected in groundwater. The negative health consequences associated with human exposure to PFAS
+    make it essential to quantify the distribution of PFAS in groundwater systems. Mapping PFAS
+    distributions is particularly challenging because a national patchwork of testing and reporting
+    requirements has resulted in sparse and spatially biased data. In this analysis, an
+    Inhomogeneous Poisson Process (IPP) modeling approach is adopted from ecological statistics to
+    continuously map PFAS distributions in groundwater across the contiguous United States. The
+    model is trained on a unique dataset of 8,910 PFAS groundwater measurements, using combined
+    concentrations of two PFAS analytes. The IPP model predictions are compared with results from
+    random forest models to highlight the robustness of this statistical modeling approach on sparse
+    datasets. This analysis provides a new approach to not only map PFAS contamination in
+    groundwater but also prioritize future sampling efforts.
+  links:
+    - title: "manuscript"
+      url: "https://pubs.acs.org/doi/10.1021/acs.est.4c05616"
+    - title: "code"
+      url: "https://github.com/bpark67/mapping-pfas"
+    - title: "supplementary figures"
+      url: "https://bpark67.github.io/webmap-est/"

@@ -7,51 +7,36 @@
         </div>
 
         <div class="subtitle">Published</div>
-        <!-- Pub1 -->
+
+        {% for pub in site.data.publications %}
         <div class="block">
             <div class="abstract">
-                <img class="project_img" src="img/plot-pfas.png">
+                <img class="project_img" src="{{ pub.image }}">
                 <div class="right">
-                    <div class="research_title">
-                        Statistical Mapping of PFOA and PFOS in Groundwater Throughout the
-                        Contiguous United States
-                    </div>
-                    <p>
-                        Per-and polyfluoroalkyl substances (PFAS) are synthetic chemicals that are increasingly being
-                        detected in groundwater. The negative health consequences associated with human exposure to PFAS
-                        make it essential to quantify the distribution of PFAS in groundwater systems. Mapping PFAS
-                        distributions is particularly challenging because a national patchwork of testing and reporting
-                        requirements has resulted in sparse and spatially biased data. In this analysis, an
-                        Inhomogeneous Poisson Process (IPP) modeling approach is adopted from ecological statistics to
-                        continuously map PFAS distributions in groundwater across the contiguous United States. The
-                        model is trained on a unique dataset of 8,910 PFAS groundwater measurements, using combined
-                        concentrations of two PFAS analytes. The IPP model predictions are compared with results from
-                        random forest models to highlight the robustness of this statistical modeling approach on sparse
-                        datasets. This analysis provides a new approach to not only map PFAS contamination in
-                        groundwater but also prioritize future sampling efforts.
-                    </p>
+                    <div class="research_title">{{ pub.title }}</div>
+                    <p>{{ pub.abstract }}</p>
                 </div>
             </div>
             <div class="publication">
-                <span class="emph">B. Park</span>,
-                <a href="https://pages.cs.wisc.edu/~hyunseung/">H. Kang</a>, and
-                <a href="https://zahasky.geoscience.wisc.edu/">C. Zahasky</a>. (2024) <b>Statistical Mapping of PFOA and
-                    PFOS in Groundwater Throughout the Contiguous United States.</b> <i>Environmental Science and
-                    Technology.</i>
-                <br>
-                <br>
-                <!-- eSVD-DE: Cohort-wide differential expression in single-cell RNA-seq data using exponential-family embeddings<br>
-                              <a href="https://bmcbioinformatics.biomedcentral.com/" target="_blank">BMC Bioinformatics</a>
-                To appear (2024):
-                (<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-024-05724-7" target="_blank">link</a>)
-                             (<a href="https://www.biorxiv.org/content/10.1101/2023.11.22.568369v1" target="_blank">biorxiv</a>)
-                             (<a href="https://github.com/linnykos/eSVD2" target="_blank">code: method</a>)
-                             (<a href="https://github.com/linnykos/eSVD2_examples" target="_blank">code: analysis</a>) -->
-                (<a href="https://pubs.acs.org/doi/10.1021/acs.est.4c05616" target="_blank">manuscript</a>)
-                (<a href="https://github.com/bpark67/mapping-pfas" target="_blank">code</a>)
-                (<a href="https://bpark67.github.io/webmap-est/" target="_blank">supplementary figures</a>)
+                {% for author in pub.authors %}
+                {% if author.is_self %}
+                <span class="emph">{{ author.name }}</span>
+                {% elsif author.link %}
+                <a href="{{ author.link }}">{{ author.name }}</a>
+                {% else %}
+                {{ author.name }}
+                {% endif %}
+                {% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+                ({{ pub.year }}) <b>{{ pub.title }}</b> <i>{{ pub.journal }}</i>
+                <br><br>
+                {% for link in pub.links %}
+                (<a href="{{ link.url }}" target="_blank">{{ link.title }}</a>)
+                {% unless forloop.last %} {% endunless %}
+                {% endfor %}
             </div>
         </div>
+        {% endfor %}
 
         <!-- <div class="subtitle">Published </div> -->
     </div>
