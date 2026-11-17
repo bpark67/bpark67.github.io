@@ -15,6 +15,7 @@ Pushing to `main` publishes the site automatically, usually within a minute or t
 | Education timeline                      | `_data/timeline.yml`                              |
 | Publications                            | `_data/publications.yml`                          |
 | Presentations & posters                 | `_presentations/` (one file each)                 |
+| Personal pages (navbar menu)            | a `.md` file per page + `personal_pages` in config |
 | Software (hidden until enabled)         | `_data/software.yml` + `show_software` in config  |
 | CV                                      | replace `img/CV.pdf`, update `cv_updated` in config |
 | Colours and fonts                       | `_data/template.yml`                              |
@@ -36,7 +37,9 @@ Create a file in `_presentations/` named `YYYY-MM-DD-short-name.md`:
 
 ```yaml
 ---
-title: JSM 2026
+title: "Full talk or poster title"
+venue: "Joint Statistical Meetings 2026"
+authors: "B. Park, E. Lila"         # optional; "B. Park" is bolded
 date: 2026-08-03
 category: Presentation        # or Poster
 keywords: Functional Data Analysis
@@ -48,6 +51,21 @@ description: >-
   One paragraph describing the work.
 ---
 ```
+
+### Add a separate page (e.g. Reading, Travel)
+1. Create `reading.md` in the repository root:
+   ```markdown
+   ---
+   layout: page
+   title: Reading
+   subtitle: Books I've enjoyed recently   # optional
+   permalink: /reading/
+   ---
+
+   Write the page in Markdown here.
+   ```
+2. List it in `_config.yml` under `personal_pages` (title + url) so it
+   appears in the navbar's "Personal" menu.
 
 ### Image sizes
 Keep images small so the site loads fast on phones:

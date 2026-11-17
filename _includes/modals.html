@@ -13,7 +13,8 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         <h2 id="modal-{{ talk.date | date: "%Y%m%d" }}-{{ talk.slug }}-title">{{ talk.title }}</h2>
-                        <p class="item-intro text-muted">{{ talk.category }} · {{ talk.date | date: "%B %-d, %Y" }}</p>
+                        <p class="item-intro text-muted">{{ talk.category }} · {{ talk.venue }} · {{ talk.date | date: "%B %-d, %Y" }}</p>
+                        {% if talk.authors %}<p class="modal-authors">{{ talk.authors | replace: "B. Park", "<strong>B. Park</strong>" }}</p>{% endif %}
                         <hr class="star-primary">
                         <img src="{{ '/img/portfolio/' | append: talk.image | relative_url }}" class="img-responsive img-centered2"
                             alt="{{ talk.category }}: {{ talk.title }}" loading="lazy">
