@@ -1,3 +1,24 @@
+# Publications, newest first (sorted by `year` automatically).
+# To add one, copy this template to the top of the list and fill it in:
+#
+# - title: "Paper title"
+#   status: "Preprint"            # optional badge, e.g. Preprint / Under review / In press
+#   image: "img/your-figure.png"  # optional, ~600px wide
+#   authors:
+#     - name: "B. Park"
+#       is_self: true             # bolds your name
+#     - name: "A. Coauthor"
+#       link: "https://..."       # optional
+#   year: 2026
+#   journal: "Journal Name"
+#   abstract: >
+#     One paragraph. Shown collapsed behind an "Abstract" toggle.
+#   links:
+#     - title: "Paper"
+#       url: "https://doi.org/..."
+#     - title: "PDF"
+#       url: "files/paper.pdf"     # files in the repo work too
+
 - title: "Statistical Mapping of PFOA and PFOS in Groundwater Throughout the Contiguous United States"
   image: "img/plot-pfas.png"
   authors:
@@ -23,9 +44,9 @@
     datasets. This analysis provides a new approach to not only map PFAS contamination in
     groundwater but also prioritize future sampling efforts.
   links:
-    - title: "manuscript"
+    - title: "Paper"
       url: "https://pubs.acs.org/doi/10.1021/acs.est.4c05616"
-    - title: "code"
+    - title: "Code"
       url: "https://github.com/bpark67/mapping-pfas"
-    - title: "supplementary figures"
+    - title: "Supplementary figures"
       url: "https://bpark67.github.io/webmap-est/"

@@ -1,39 +1,35 @@
-<!-- Portfolio Modals -->
-{% for post in site.posts %}
-<div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog"
-    aria-hidden="true">
+<!-- Presentation pop-ups (one per file in _presentations/) -->
+{% for talk in site.presentations %}
+<div class="portfolio-modal modal fade" id="modal-{{ talk.date | date: "%Y%m%d" }}-{{ talk.slug }}" tabindex="-1" role="dialog"
+    aria-labelledby="modal-{{ talk.date | date: "%Y%m%d" }}-{{ talk.slug }}-title" aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
+        <div class="close-modal" data-dismiss="modal" aria-label="Close">
             <div class="lr">
-                <div class="rl">
-                </div>
+                <div class="rl"></div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>{{ post.title }}</h2>
+                        <h2 id="modal-{{ talk.date | date: "%Y%m%d" }}-{{ talk.slug }}-title">{{ talk.title }}</h2>
+                        <p class="item-intro text-muted">{{ talk.category }} · {{ talk.date | date: "%B %-d, %Y" }}</p>
                         <hr class="star-primary">
-                        <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered2"
-                            alt="{{ post.alt }}">
-                        <p align="left">{{ post.description }}</p>
-                        <ul class="list-inline item-details">
-                            <li>Date:
-                                <strong><a>{{ post.project-date }}</a>
-                                </strong>
-                            </li>
-                            <li>Category:
-                                <strong><a>{{ post.category }}</a>
-                                </strong>
-                            </li>
-                            <li>Keywords:
-                                <strong><a>{{ post.keywords }}</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            Close</button>
+                        <img src="{{ '/img/portfolio/' | append: talk.image | relative_url }}" class="img-responsive img-centered2"
+                            alt="{{ talk.category }}: {{ talk.title }}" loading="lazy">
+                        <p class="modal-description">{{ talk.description }}</p>
+                        {% if talk.keywords %}<p class="modal-keywords"><strong>Keywords:</strong> {{ talk.keywords }}</p>{% endif %}
+                        <div class="modal-actions">
+                            {% if talk.pdf %}
+                            <a class="btn btn-primary" href="{{ talk.pdf | relative_url }}" target="_blank" rel="noopener">
+                                <i class="fa fa-file-pdf-o"></i> View {{ talk.category | downcase }} (PDF)</a>
+                            {% endif %}
+                            {% if talk.slides %}
+                            <a class="btn btn-primary" href="{{ talk.slides | relative_url }}" target="_blank" rel="noopener">
+                                <i class="fa fa-desktop"></i> Slides</a>
+                            {% endif %}
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>

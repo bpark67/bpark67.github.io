@@ -1,37 +1,58 @@
+# ---------------------------------------------------------------------------
 # Site settings
+# Most day-to-day edits happen in this file, in _data/publications.yml,
+# and in _presentations/. See README.md for step-by-step instructions.
+# ---------------------------------------------------------------------------
 title: Bumjun Park
+description: "Bumjun Park, Ph.D. student in Biostatistics at the University of Washington. Functional data analysis, neuroimaging, and spatial and environmental statistics."
+url: "https://bpark67.github.io"
+baseurl: ""
+lang: en_US
 email: bpark67@uw.edu
-description: "Personal webiste for Bumjun Park, Ph.D. Student, Department of Biostatistics, University of Washington"
+image: /img/about/me.jpg   # preview image when the site is shared on social media / Slack
 
+# Shown in the header and under the About Me photo
+position: Ph.D. Student
+department: Department of Biostatistics
+institution: University of Washington
+photo: img/about/me.jpg
 
-# Team names, titles and social links
-people:
-- name: Bumjun Park
-  pic: 8
-  position: Ph.D. Student
-  social:
-    - title: linkedin-in
-      url: https://www.linkedin.com/in/bpark67/
-    - title: github-alt
-      url: http://github.com/bpark67
-    - title: orcid
-      url: https://orcid.org/0009-0008-0361-3810
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Icons under the About Me photo and in the footer.
+# `icon` is a Font Awesome brand icon name (https://fontawesome.com/search?ic=brands)
 social:
-  - title: linkedin
+  - title: LinkedIn
+    icon: linkedin-in
     url: https://www.linkedin.com/in/bpark67/
-  - title: github
-    url: http://github.com/bpark67
-  - title: orcid
+  - title: GitHub
+    icon: github-alt
+    url: https://github.com/bpark67
+  - title: ORCID
+    icon: orcid
     url: https://orcid.org/0009-0008-0361-3810
 
+# CV (PDF). Replace the file at this path when you update your CV.
+cv: img/CV.pdf
+cv_updated: April 2026   # update this when you replace the PDF
 
+# Turn sections on/off. Set show_software to true once you have a package to list.
+show_software: false
+
+# Presentations & posters live in _presentations/ (one file each).
+# output: false means they appear only on the home page, not as separate pages.
+collections:
+  presentations:
+    output: false
 
 # Build settings
 markdown: kramdown
-permalink: pretty
 plugins:
   - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
 google_analytics: G-9VNF2WQ0CZ

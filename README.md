@@ -1,30 +1,69 @@
-Agency Jekyll theme
-====================
+# bpark67.github.io
 
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+Personal academic website of Bumjun Park, served by GitHub Pages at <https://bpark67.github.io>.
+Built with Jekyll on a customised version of the
+[Agency](https://startbootstrap.com/theme/agency) Bootstrap theme.
 
-# How to use
+Pushing to `main` publishes the site automatically, usually within a minute or two.
 
-###Portfolio 
+## Where things live
 
-Portfolio projects are in '/_posts'
+| To change…                              | Edit                                              |
+| --------------------------------------- | ------------------------------------------------- |
+| Name, title, email, social links        | `_config.yml`                                     |
+| Bio paragraphs                          | `_includes/aboutme.html`                          |
+| Education timeline                      | `_data/timeline.yml`                              |
+| Publications                            | `_data/publications.yml`                          |
+| Presentations & posters                 | `_presentations/` (one file each)                 |
+| Software (hidden until enabled)         | `_data/software.yml` + `show_software` in config  |
+| CV                                      | replace `img/CV.pdf`, update `cv_updated` in config |
+| Colours and fonts                       | `_data/template.yml`                              |
+| Styling                                 | `_includes/css/agency.css` (custom rules at the bottom) |
 
-Images are in '/img/portfolio'
+## Common tasks
 
-###About
+### Update the CV
+1. Replace `img/CV.pdf` with the new file (keep the same name).
+2. Change `cv_updated:` in `_config.yml`.
 
-Images are in '/img/about/'
+### Add a publication
+Copy the commented template at the top of `_data/publications.yml` and fill it in.
+Use `status: "Preprint"` (or "Under review", "In press") for work that isn't published yet.
+The list sorts itself by `year`.
 
-###Team
+### Add a talk or poster
+Create a file in `_presentations/` named `YYYY-MM-DD-short-name.md`:
 
-Team members and info are in '_config.yml'
+```yaml
+---
+title: JSM 2026
+date: 2026-08-03
+category: Presentation        # or Poster
+keywords: Functional Data Analysis
+thumbnail: jsm-small.jpg      # in img/portfolio/, ~720px wide
+image: jsm-big.jpg            # in img/portfolio/, ~1800px wide
+pdf: img/portfolio/jsm-poster.pdf   # optional: poster PDF
+slides: img/portfolio/jsm-slides.pdf # optional: slides PDF or link
+description: >-
+  One paragraph describing the work.
+---
+```
 
-Images are in '/img/team/'
+### Image sizes
+Keep images small so the site loads fast on phones:
+save photos and figures as **JPEG, at most ~1800px wide** (thumbnails ~720px).
+A phone photo straight from the camera is often 5–30 MB; resize it before adding it.
 
+## Previewing locally (optional)
 
-# Demo
+Requires Ruby. From the repository folder:
 
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+```bash
+bundle install
+```
 
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+```bash
+bundle exec jekyll serve
+```
+
+Then open <http://localhost:4000>.

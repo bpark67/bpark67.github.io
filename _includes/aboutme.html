@@ -1,4 +1,4 @@
-<!-- Team Section -->
+<!-- About Me -->
 <section id="aboutme" class="bg-light-gray">
     <div class="container">
         <div class="row">
@@ -6,111 +6,60 @@
                 <h2 class="section-heading">About Me</h2>
             </div>
         </div>
+
         <div class="row">
-            {% for member in site.people %}
-            <div class="col-sm-4">
-            </div>
-            <div class="team-member">
-                <div class="text-center">
-                    <img src="img/team/{{ member.pic }}.png" class="img-responsive img-circle" alt="">
+            <div class="col-sm-12">
+                <div class="team-member">
+                    <img src="{{ site.photo | relative_url }}" class="profile-photo img-circle"
+                        alt="Photo of {{ site.title }}" width="260" height="260">
+                    <h4>{{ site.title }}</h4>
+                    <p class="text-muted">{{ site.position }}, {{ site.department }}, {{ site.institution }}</p>
+                    {% include social.html %}
                 </div>
-                <h4>{{ member.name }}</h4>
-                <p class="text-muted">{{ member.position }}</p>
-                <ul class="list-inline social-buttons">
-                    {% for network in member.social %}
-                    <li>
-                        <a href="{{ network.url }}">
-                            <i class="fa-brands fa-{{ network.title }}"></i>
-                        </a>
-                    </li>
-                    {% endfor %}
-
-                </ul>
             </div>
         </div>
-        {% endfor %}
-    </div>
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-left">
-            <p class="large text-muted">Hi! My name is Bumjun Park. I am from Seongnam, South Korea, and grew up between
-                Seongnam and Madison, Wisconsin. I am currently a
-                doctoral student in Biostatistics at the University of Washington. I am a proud Wisconsin Badger,
-                holding a
-                degree in Statistics and certificates in Mathematics and Economic
-                Analytics. I am a native speaker of English and Korean.
 
-            </p>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 bio">
+                <p class="large">I am a Ph.D. student in Biostatistics at the University of Washington, advised by
+                    Professor <a href="https://faculty.washington.edu/elila/">Eardi Lila</a>. My research develops
+                    functional data analysis methods for neuroimaging and biomarkers in Alzheimer's disease. My broader
+                    interests include spatial and environmental statistics, functional data analysis, and network
+                    modeling.</p>
 
-            <p class="large text-muted"> I am advised by Professor Professor <a
-                    href="http://faculty.washington.edu/elila/">Eardi Lila</a>, working to advance functional data
-                analysis methods for neuroimaging and biomarkers in Alzheimer's disease. My broader academic interests
-                include spatial and environmental statistics, functional data analysis, and network modeling.
-            </p>
+                <p class="large">I also work with Professor <a href="https://statdivlab.github.io/">Amy Willis</a> on
+                    phylogenetic modeling methods to assist allergen detection from pollen samples, and with Professor
+                    <a href="https://faculty.washington.edu/jonno/">Jon Wakefield</a> on Bayesian models of mortality
+                    data that address missingness to produce more robust estimates of child mortality.</p>
 
-            <p class="large text-muted">I also do research with Professor <a href="https://statdivlab.github.io/">Amy
-                    Willis</a> on developing phylogenetic modeling methods to assist in allergen detection from pollen
-                samples.
-
-                And with Professor <a href="https://faculty.washington.edu/jonno/">Jon Wakefield</a>, I am investigating
-                Bayesian methods of modeling mortality data, addressing the challenges of data missingness to produce
-                more robust estimates of child mortality.
-
-                <!-- Also, with Professor <a href="https://statdivlab.github.io/">Amy
-                    Willis</a>, Department
-                of Biostatistics, I study methods of missing data imputation leveraging information from covariance
-                structures from phylogenies. -->
-            </p>
+                <p class="large">I grew up between Seongnam, South Korea, and Madison, Wisconsin, and I am a proud
+                    Wisconsin Badger, with a B.S. in Statistics and certificates in Mathematics and Economic
+                    Analytics. I am a native speaker of English and Korean.</p>
+            </div>
         </div>
     </div>
-    </div>
-    <hr>
+
     <div class="container">
+        <hr>
         <div class="row">
             <div class="col-lg-12">
                 <ul class="timeline">
-                    <li>
+                    {% for item in site.data.timeline %}
+                    <li{% cycle '', ' class="timeline-inverted"' %}>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/hafs.png" alt="">
+                            <img class="img-circle img-responsive" src="{{ item.logo | relative_url }}" alt="{{ item.place }} logo">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2015- February 2018</h4>
-                                <h4 class="subheading">Hankuk Academy of Foreign Studies</h4>
+                                <h4>{{ item.dates }}</h4>
+                                <h4 class="subheading">{{ item.place }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">International Department</p>
+                                <p class="text-muted">{{ item.detail }}</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/wisc_rescale.png" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>September 2018 - May 2023</h4>
-                                <h4 class="subheading">University of Wisconsin-Madison</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">BS in Statistics <br> Certificate in Mathematics, Economic
-                                    Analytics</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/wash_rescale.png" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>September 2023 -</h4>
-                                <h4 class="subheading">University of Washington</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Ph.D. Student in Biostatistics</p>
-                            </div>
-                        </div>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>

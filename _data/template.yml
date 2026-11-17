@@ -4,6 +4,7 @@ color:
   secondary: e3e4e6
   secondary-dark: 66545e
   muted: 777
+  link: 4f6a85        # darker shade of primary, readable on white
 
 # Font Families
 # Font options for the website
