@@ -20,6 +20,7 @@
 #       url: "files/paper.pdf"     # files in the repo work too
 
 - title: "Semiparametric Spatial Point Processes"
+  image: "img/plot-semiparam.png"
   status: "Preprint"
   authors:
     - name: "X. Lin"
@@ -34,6 +35,9 @@
   links:
     - title: "arXiv"
       url: "https://arxiv.org/abs/2410.04359"
+  abstract: >
+    We consider a general problem in spatial point processes: estimating and testing the relationship between the distribution of spatial point patterns and main "target" covariates while adjusting for auxiliary "nuisance" covariates. Existing solutions often require a fully parametric model for all covariates, which can be biased if the model is mis-specified. To this end, we propose semiparametric spatial point processes: a parametric component measures the relationship between the target covariates and the spatial point patterns, and a nonparametric component adjusts for the nuisance covariates. We propose a generalized profile pseudo-likelihood framework to estimate the parametric component. The proposed estimator is shown to be asymptotically normal for both Poisson and non-Poisson spatial point processes with log-linear intensities. We provide a consistent estimator of the asymptotic covariance matrix for valid inference. We also show how to compute the proposed estimator using existing R software developed for generalized partial linear models in i.i.d. settings.
+We conclude with a simulation study to assess the finite-sample performance of our estimator and a data analysis examining the relationship between the spatial distribution of per- and polyfluoroalkyl substances (PFAS) and sources of PFAS, such as military bases, airports, and landfills, while accounting for other covariates. Compared to parametric spatial point processes, semiparametric spatial point processes provide potentially more robust estimates about the sources of PFAS and more nuanced intensity maps of PFAS.
 
 - title: "Statistical Mapping of PFOA and PFOS in Groundwater Throughout the Contiguous United States"
   image: "img/plot-pfas.png"
