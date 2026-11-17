@@ -1,0 +1,13 @@
+<ul class="book-list">
+    {% for book in include.books %}
+    <li class="book">
+        <div class="book-spine" aria-hidden="true"></div>
+        <div class="book-body">
+            <h3 class="book-title" lang="{% if book.english %}ko{% else %}en{% endif %}">{{ book.title }}</h3>
+            {% if book.english %}<p class="book-english">{{ book.english }}</p>{% endif %}
+            <p class="book-author">{{ book.author }}{% if book.year %} · {{ book.year }}{% endif %}</p>
+            {% if book.note and book.note != "" %}<p class="book-note">{{ book.note }}</p>{% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>

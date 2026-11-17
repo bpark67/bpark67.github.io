@@ -1,0 +1,29 @@
+<!-- Teaching: entries come from _data/teaching.yml -->
+<section id="teaching">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Teaching</h2>
+            </div>
+        </div>
+        {% for item in site.data.teaching %}
+        <article class="pub-card teach-card">
+            <div class="teach-term">{{ item.term }}</div>
+            <div class="pub-body">
+                <span class="pub-status">{{ item.role }}</span>
+                <h3 class="pub-title">{{ item.course }}: {{ item.title }}</h3>
+                <p class="pub-venue">{{ item.institution }}{% if item.instructor %} · Instructor:
+                    {% if item.instructor_link %}<a href="{{ item.instructor_link }}" target="_blank" rel="noopener">{{ item.instructor }}</a>{% else %}{{ item.instructor }}{% endif %}{% endif %}</p>
+                {% if item.description %}<p class="teach-desc">{{ item.description }}</p>{% endif %}
+                {% if item.links %}
+                <div class="pub-links">
+                    {% for link in item.links %}
+                    <a class="btn btn-xs btn-pub" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>

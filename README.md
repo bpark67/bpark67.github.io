@@ -15,6 +15,8 @@ Pushing to `main` publishes the site automatically, usually within a minute or t
 | Education timeline                      | `_data/timeline.yml`                              |
 | Publications                            | `_data/publications.yml`                          |
 | Presentations & posters                 | `_presentations/` (one file each)                 |
+| Teaching                                | `_data/teaching.yml`                              |
+| Reading page (books)                    | `_data/reading.yml`                               |
 | Personal pages (navbar menu)            | a `.md` file per page + `personal_pages` in config |
 | Software (hidden until enabled)         | `_data/software.yml` + `show_software` in config  |
 | CV                                      | replace `img/CV.pdf`, update `cv_updated` in config |

@@ -1102,3 +1102,53 @@ ul.social-buttons li a { text-align: center; }
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #fff; }
 }
+
+/* Teaching cards (reuse publication card styles) */
+.teach-card { align-items: stretch; }
+.teach-term {
+    flex: 0 0 120px;
+    padding-top: 2px;
+    font-family: {{ site.data.template.font.primary }};
+    font-weight: 700;
+    font-size: 15px;
+    color: #{{ site.data.template.color.link }};
+}
+.teach-desc { margin: 10px 0 0; font-size: 15px; color: #555; }
+@media (max-width: 767px) {
+    .teach-term { flex-basis: auto; }
+}
+
+/* Reading page */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.page-content .book { margin: 0; }
+.book {
+    display: flex;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.book-spine {
+    flex: 0 0 8px;
+    background: #{{ site.data.template.color.primary }};
+}
+.book:nth-child(even) .book-spine { background: #{{ site.data.template.color.secondary }}; }
+.book-body { padding: 18px 20px; }
+.page-content .book-title {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.35;
+    text-transform: none;
+    color: #{{ site.data.template.color.secondary-dark }};
+}
+.page-content .book-title:lang(ko) { font-family: "Noto Serif KR", serif; font-weight: 700; letter-spacing: -0.01em; }
+.page-content .book-english { margin: 2px 0 0; font-size: 14px; font-style: italic; color: #666; }
+.page-content .book-author { margin: 8px 0 0; font-size: 14px; color: #777; }
+.page-content .book-note { margin: 10px 0 0; font-size: 15px; color: #444; }
