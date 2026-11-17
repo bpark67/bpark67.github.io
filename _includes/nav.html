@@ -20,6 +20,7 @@
                 <li><a class="{{ scroll }}" href="{{ base }}#aboutme">About Me</a></li>
                 <li><a class="{{ scroll }}" href="{{ base }}#pubs">Publications</a></li>
                 <li><a class="{{ scroll }}" href="{{ base }}#portfolio">Presentations</a></li>
+                {% if site.data.teaching.size > 0 %}<li><a class="{{ scroll }}" href="{{ base }}#teaching">Teaching</a></li>{% endif %}
                 {% if site.show_software %}<li><a class="{{ scroll }}" href="{{ base }}#software">Software</a></li>{% endif %}
                 <li><a class="{{ scroll }}" href="{{ base }}#cv">CV</a></li>
                 {% if site.personal_pages.size > 0 %}

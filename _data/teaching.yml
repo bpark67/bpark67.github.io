@@ -1,0 +1,21 @@
+# Teaching, newest first. Copy an entry to add a new one.
+#
+# - course: "BIOST 515"
+#   title: "Applied Biostatistics II"
+#   role: "Teaching Assistant"
+#   institution: "University of Washington"
+#   term: "Winter 2026"                 # shown as written
+#   instructor: "Amy Willis"            # optional
+#   instructor_link: "https://..."      # optional
+#   description: "One or two sentences on what you did (optional)."
+#   links:                              # optional
+#     - title: "Course page"
+#       url: "https://..."
+
+- course: "BIOST 515"
+  title: "Applied Biostatistics II"
+  role: "Teaching Assistant"
+  institution: "University of Washington"
+  term: "Winter 2026"
+  instructor: "Amy Willis"
+  instructor_link: "https://statdivlab.github.io/"

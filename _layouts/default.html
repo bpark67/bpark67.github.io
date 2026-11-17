@@ -10,6 +10,7 @@
     {% include aboutme.html %}
     {% include pubs.html %}
     {% include portfolio_grid.html %}
+    {% if site.data.teaching.size > 0 %}{% include teaching.html %}{% endif %}
     {% if site.show_software %}{% include software.html %}{% endif %}
     {% include cv.html %}
   </main>

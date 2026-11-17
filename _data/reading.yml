@@ -1,0 +1,45 @@
+# Books shown on the Reading page (/reading/).
+#
+# Fields:
+#   title       - title as you want it shown (original language is fine)
+#   english     - optional English title / translation, shown under a non-English title
+#   author      - author's name
+#   year        - year first published
+#   note        - optional: a sentence or two on why you love it (makes the page much better)
+#
+# Lists: `favorites` (all-time favorites) and `recent` (currently reading / recently read).
+# An empty list is hidden automatically.
+
+favorites:
+  - title: "The Moon and Sixpence"
+    author: "W. Somerset Maugham"
+    year: 1919
+    note: ""
+
+  - title: "East of Eden"
+    author: "John Steinbeck"
+    year: 1952
+    note: ""
+
+  - title: "A Farewell to Arms"
+    author: "Ernest Hemingway"
+    year: 1929
+    note: ""
+
+  - title: "남한산성"
+    english: "Namhansanseong"
+    author: "김훈 (Kim Hoon)"
+    year: 2007
+    note: ""
+
+  - title: "우리들의 일그러진 영웅"
+    english: "Our Twisted Hero"
+    author: "이문열 (Yi Mun-yol)"
+    year: 1987
+    note: ""
+
+recent: []
+#  - title: "Book title"
+#    author: "Author"
+#    year: 2024
+#    note: "Optional thoughts."

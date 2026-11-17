@@ -42,9 +42,9 @@ show_software: false
 # Each page is a Markdown file in the repository root with `layout: page`.
 # Leave the list empty to hide the menu.
 personal_menu_title: Personal
-personal_pages: []
-#  - title: Reading
-#    url: /reading/
+personal_pages:
+  - title: Reading
+    url: /reading/
 
 # Presentations & posters live in _presentations/ (one file each).
 # output: false means they appear only on the home page, not as separate pages.
