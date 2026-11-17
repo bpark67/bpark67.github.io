@@ -1,1 +1,16 @@
-
+<!-- Contact / footer -->
+<footer id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 footer-contact">
+                <h3>Contact</h3>
+                <p>{{ site.department }}<br>{{ site.institution }}<br>
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+            </div>
+            <div class="col-md-6 footer-social">
+                {% include social.html %}
+                <p class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+            </div>
+        </div>
+    </div>
+</footer>

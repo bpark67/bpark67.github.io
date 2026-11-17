@@ -1,0 +1,16 @@
+# Education / position timeline shown under About Me (oldest first).
+# Entries alternate left/right automatically.
+- dates: March 2015 – February 2018
+  place: Hankuk Academy of Foreign Studies
+  detail: International Department
+  logo: img/about/hafs.png
+
+- dates: September 2018 – May 2023
+  place: University of Wisconsin–Madison
+  detail: B.S. in Statistics<br>Certificates in Mathematics and Economic Analytics
+  logo: img/about/wisc_rescale.png
+
+- dates: September 2023 – present
+  place: University of Washington
+  detail: Ph.D. Student in Biostatistics
+  logo: img/about/wash_rescale.png

@@ -1,0 +1,10 @@
+# Software shown in the Software section.
+# The section is hidden until you set `show_software: true` in _config.yml.
+#
+# - name: FunOnFun
+#   description: An R package for multivariate function-on-function regression.
+#   links:
+#     - title: GitHub
+#       url: https://github.com/bpark67/FunOnFun
+#     - title: Website
+#       url: https://bpark67.github.io/FunOnFun

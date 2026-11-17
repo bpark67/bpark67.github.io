@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 {% include head.html %}
-
 
 <body id="page-top" class="index">
 
   {% include header.html %}
-  {% include aboutme.html %}
-  {% include pubs.html %}
-  {% include portfolio_grid.html %}
-  {% include software.html %}
-  {% include cv.html %}
+  <main>
+    {% include aboutme.html %}
+    {% include pubs.html %}
+    {% include portfolio_grid.html %}
+    {% if site.show_software %}{% include software.html %}{% endif %}
+    {% include cv.html %}
+  </main>
   {% include footer.html %}
   {% include modals.html %}
   {% include js.html %}
