@@ -1,11 +1,11 @@
-# Color settings (hex codes without the leading #)
+# Color settings: "Navy & Brass" palette (hex codes without the leading #)
 color:
-  primary: 93a4b5         # accent: buttons, active nav item, timeline, card edges
-  primary-dark: 6f8296    # button hover (must be dark enough for white text)
-  secondary: e3e4e6       # light tint: nav hover text, timeline circles
-  secondary-dark: 66545e  # body text and headings
-  link: 4f6a85            # links in text (needs good contrast on white)
-  dark: 222222            # navbar, footer, social icon circles
+  primary: 2b4c7e         # accent: buttons, active nav item, timeline, card edges
+  primary-dark: 1d3557    # button hover (must be dark enough for white text)
+  secondary: e6c98f       # light tint: nav hover text, timeline circles
+  secondary-dark: 22303f  # body text and headings
+  link: 2b4c7e            # links in text (needs good contrast on white)
+  dark: 14213d            # navbar, footer, social icon circles
   muted: 777777           # small grey text
 
 # Font Families
