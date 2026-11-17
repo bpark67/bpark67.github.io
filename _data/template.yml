@@ -1,10 +1,12 @@
-# Color settings (hex-codes without the leading hash-tag)
+# Color settings (hex codes without the leading #)
 color:
-  primary: 93a4b5
-  secondary: e3e4e6
-  secondary-dark: 66545e
-  muted: 777
-  link: 4f6a85        # darker shade of primary, readable on white
+  primary: 93a4b5         # accent: buttons, active nav item, timeline, card edges
+  primary-dark: 6f8296    # button hover (must be dark enough for white text)
+  secondary: e3e4e6       # light tint: nav hover text, timeline circles
+  secondary-dark: 66545e  # body text and headings
+  link: 4f6a85            # links in text (needs good contrast on white)
+  dark: 222222            # navbar, footer, social icon circles
+  muted: 777777           # small grey text
 
 # Font Families
 # Font options for the website

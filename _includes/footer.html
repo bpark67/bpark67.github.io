@@ -5,7 +5,7 @@
             <div class="col-md-6 footer-contact">
                 <h3>Contact</h3>
                 <p>{{ site.department }}<br>{{ site.institution }}<br>
-                    <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                    <span class="footer-email">{{ site.email_display }}</span></p>
             </div>
             <div class="col-md-6 footer-social">
                 {% include social.html %}

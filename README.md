@@ -10,7 +10,7 @@ Pushing to `main` publishes the site automatically, usually within a minute or t
 
 | To change…                              | Edit                                              |
 | --------------------------------------- | ------------------------------------------------- |
-| Name, title, email, social links        | `_config.yml`                                     |
+| Name, title, email text, social links       | `_config.yml`                                     |
 | Bio paragraphs                          | `_includes/aboutme.html`                          |
 | Education timeline                      | `_data/timeline.yml`                              |
 | Publications                            | `_data/publications.yml`                          |
