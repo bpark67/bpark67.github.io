@@ -1,5 +1,7 @@
 ---
-title: American Water Resources Association - Wisconsin Section
+title: "Groundwater Contamination of PFAS in the United States: Insights from an Ecological Sampling Bias Correction Method"
+venue: "American Water Resources Association, Wisconsin Section"
+authors: "B. Park, H. Kang, W. Gnesda, C. Zahasky"
 date: 2023-03-16
 category: Poster
 keywords: Environmental Statistics

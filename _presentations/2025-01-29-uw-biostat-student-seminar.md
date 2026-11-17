@@ -1,5 +1,7 @@
 ---
-title: UW Biostat Student Seminar
+title: "False Discovery Rate and Multiple Testing: Detecting Microbiome Networks"
+venue: "UW Biostat Student Seminar"
+authors: "B. Park"
 date: 2025-01-29
 category: Presentation
 keywords: Microbiome

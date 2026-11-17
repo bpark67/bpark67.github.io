@@ -1,5 +1,7 @@
 ---
-title: Planetary Health Alliance Annual Meeting
+title: "Malaria Risk and Forest Cover Change in Kenya: A Geospatial Analysis"
+venue: "Planetary Health Alliance Annual Meeting"
+authors: "T. G. Leffler, R. Hoffman, B. Park, J. Patz"
 date: 2022-11-02
 category: Poster
 keywords: Epidemiology

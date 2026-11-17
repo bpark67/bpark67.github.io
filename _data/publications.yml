@@ -19,6 +19,22 @@
 #     - title: "PDF"
 #       url: "files/paper.pdf"     # files in the repo work too
 
+- title: "Semiparametric Spatial Point Processes"
+  status: "Preprint"
+  authors:
+    - name: "X. Lin"
+    - name: "B. Park"
+      is_self: true
+    - name: "C. Zahasky"
+      link: "https://zahasky.geoscience.wisc.edu/"
+    - name: "H. Kang"
+      link: "https://pages.cs.wisc.edu/~hyunseung/"
+  year: 2025
+  journal: "arXiv"
+  links:
+    - title: "arXiv"
+      url: "https://arxiv.org/abs/2410.04359"
+
 - title: "Statistical Mapping of PFOA and PFOS in Groundwater Throughout the Contiguous United States"
   image: "img/plot-pfas.png"
   authors:

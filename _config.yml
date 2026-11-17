@@ -38,6 +38,14 @@ cv_updated: April 2026   # update this when you replace the PDF
 # Turn sections on/off. Set show_software to true once you have a package to list.
 show_software: false
 
+# Separate pages listed under a "Personal" menu in the navbar.
+# Each page is a Markdown file in the repository root with `layout: page`.
+# Leave the list empty to hide the menu.
+personal_menu_title: Personal
+personal_pages: []
+#  - title: Reading
+#    url: /reading/
+
 # Presentations & posters live in _presentations/ (one file each).
 # output: false means they appear only on the home page, not as separate pages.
 collections:

@@ -1,5 +1,7 @@
 ---
-title: UW Biostat Student Seminar
+title: "Function-on-Function Regression on Sparse Observations: Multivariate Functional PCA on Vessel Wall Imaging Data"
+venue: "UW Biostat Student Seminar"
+authors: "B. Park"
 date: 2024-10-02
 category: Presentation
 keywords: Functional Data Analysis

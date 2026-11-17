@@ -1,5 +1,7 @@
 ---
-title: Water@UW-Madison
+title: "Groundwater Contamination of PFAS in the United States: Insights from a Random Forest Model"
+venue: "Water@UW-Madison"
+authors: "B. Park, W. Gnesda, C. Zahasky"
 date: 2022-11-07
 category: Poster
 keywords: Environmental Statistics

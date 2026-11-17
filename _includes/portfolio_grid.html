@@ -7,24 +7,17 @@
                 <h2 class="section-heading">Presentations</h2>
             </div>
         </div>
-        <div class="row portfolio-row">
+        <div class="talk-list">
             {% for talk in talks %}
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#modal-{{ talk.date | date: "%Y%m%d" }}-{{ talk.slug }}" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="{{ '/img/portfolio/' | append: talk.thumbnail | relative_url }}" class="img-responsive img-centered"
-                        alt="{{ talk.category }}: {{ talk.title }}" loading="lazy">
-                </a>
-                <div class="portfolio-caption">
-                    <span class="portfolio-category">{{ talk.category }}</span>
-                    <h4>{{ talk.title }}</h4>
-                    <p class="text-muted">{{ talk.date | date: "%B %Y" }}</p>
-                </div>
-            </div>
+            <a class="talk-card" href="#modal-{{ talk.date | date: '%Y%m%d' }}-{{ talk.slug }}" data-toggle="modal">
+                <img class="talk-thumb" src="{{ '/img/portfolio/' | append: talk.thumbnail | relative_url }}"
+                    alt="" loading="lazy" width="120" height="90">
+                <span class="talk-text">
+                    <span class="talk-meta">{{ talk.category }} · {{ talk.date | date: "%b %Y" }}</span>
+                    <span class="talk-title">{{ talk.title }}</span>
+                    <span class="talk-venue">{{ talk.venue }}</span>
+                </span>
+            </a>
             {% endfor %}
         </div>
     </div>

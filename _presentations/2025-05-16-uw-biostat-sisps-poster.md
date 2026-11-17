@@ -1,5 +1,7 @@
 ---
-title: UW Biostat Student-Invited Speaker Poster Session
+title: "Tracking Vessel Wall Changes over Time"
+venue: "UW Biostat Student-Invited Speaker Poster Session"
+authors: "B. Park, E. Lila, M. Mossa-Basha"
 date: 2025-05-16
 category: Poster
 keywords: Functional Data Analysis
