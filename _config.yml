@@ -8,7 +8,8 @@ description: "Bumjun Park, Ph.D. student in Biostatistics at the University of W
 url: "https://bpark67.github.io"
 baseurl: ""
 lang: en_US
-email: bpark67@uw.edu
+# Shown as plain text (not a link) to make it harder for spam bots to harvest
+email_display: "bpark67 (at) uw (dot) edu"
 image: /img/about/me.jpg   # preview image when the site is shared on social media / Slack
 
 # Shown in the header and under the About Me photo
