@@ -37,7 +37,8 @@
                 {% if pub.abstract %}
                 <details class="pub-abstract">
                     <summary>Abstract</summary>
-                    <p>{{ pub.abstract }}</p>
+                    {% assign paras = pub.abstract | strip | newline_to_br | split: '<br />' %}
+                    {% for para in paras %}{% assign para = para | strip %}{% if para != "" %}<p>{{ para }}</p>{% endif %}{% endfor %}
                 </details>
                 {% endif %}
             </div>
