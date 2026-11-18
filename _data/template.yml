@@ -1,12 +1,20 @@
-# Color settings: "Navy & Brass" palette (hex codes without the leading #)
+# Color settings: "Taupe & Lavender" palette (hex codes without the leading #)
+# Warm neutrals (taupe, grey olive, silver, parchment) with a lavender accent
+# that blends Heather and Wisteria.
 color:
-  primary: 2b4c7e         # accent: buttons, active nav item, timeline, card edges
-  primary-dark: 1d3557    # button hover (must be dark enough for white text)
-  secondary: e6c98f       # light tint: nav hover text, timeline circles
-  secondary-dark: 22303f  # body text and headings
-  link: 2b4c7e            # links in text (needs good contrast on white)
-  dark: 14213d            # navbar, footer, social icon circles
-  muted: 777777           # small grey text
+  primary: 69568c         # deep lavender: buttons, active nav item, card edges
+  primary-dark: 4f4169    # button hover (must be dark enough for white text)
+  secondary: c5b8da       # light lavender: nav hover text, timeline circles, badges
+  secondary-dark: 463f3a  # taupe: body text and headings
+  link: 69568c            # links in text (needs good contrast on parchment)
+  dark: 463f3a            # taupe: navbar, footer, social icon circles
+  muted: 6e6661           # small secondary text (grey olive, darkened for readability)
+  text-soft: 5c544f       # paragraph text that is a step lighter than headings
+  background: f4f3ee      # parchment: page background
+  background-alt: ebe9e2  # alternating section background
+  surface: fbfaf7         # cards and panels
+  border: d9d5ce          # card borders and dividers
+  silver: bcb8b1          # stronger rules, footer small text
 
 # Font Families
 # Font options for the website
