@@ -1,6 +1,9 @@
-# bpark67.github.io
+# bumjunpark.com
 
-Personal academic website of Bumjun Park, served by GitHub Pages at <https://bpark67.github.io>.
+Personal academic website of Bumjun Park, served by GitHub Pages at <https://bumjunpark.com>.
+The custom domain is set in the `CNAME` file and in the repository's Settings → Pages;
+DNS is hosted at Hurricane Electric (dns.he.net), and the domain is registered at Porkbun.
+The old address, bpark67.github.io, redirects here automatically.
 Built with Jekyll on a customised version of the
 [Agency](https://startbootstrap.com/theme/agency) Bootstrap theme.
 
