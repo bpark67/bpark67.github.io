@@ -13,7 +13,7 @@ Pushing to `main` publishes the site automatically, usually within a minute or t
 
 | To change…                              | Edit                                              |
 | --------------------------------------- | ------------------------------------------------- |
-| Name, title, email text, social links       | `_config.yml`                                     |
+| Name, title, encoded email, social links       | `_config.yml`                                     |
 | Bio paragraphs                          | `_includes/aboutme.html`                          |
 | Education timeline                      | `_data/timeline.yml`                              |
 | Publications                            | `_data/publications.yml`                          |
@@ -27,6 +27,17 @@ Pushing to `main` publishes the site automatically, usually within a minute or t
 | Styling                                 | `_includes/css/agency.css` (custom rules at the bottom) |
 
 ## Common tasks
+
+### Change the email address
+The footer shows your email only after a visitor presses and holds a button
+(`js/email-reveal.js`). The address is stored encoded in `_config.yml` as
+`email_encoded`. To change it, run this with the new address and paste the result:
+
+```bash
+python3 -c "import base64;print(base64.b64encode('you@example.edu'[::-1].encode()).decode())"
+```
+
+`email_honeypot` is a hidden decoy link for scrapers; delete that line to remove it.
 
 ### Update the CV
 1. Replace `img/CV.pdf` with the new file (keep the same name).

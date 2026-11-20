@@ -8,8 +8,13 @@ description: "Bumjun Park, Ph.D. student in Biostatistics at the University of W
 url: "https://bumjunpark.com"
 baseurl: ""
 lang: en_US
-# Shown as plain text (not a link) to make it harder for spam bots to harvest
-email_display: "bpark67 (at) uw (dot) edu"
+# Email, encoded so it never appears as readable text in the page or this file.
+# Visitors see it only after pressing and holding the button in the footer.
+# To change it, run this (with your new address) and paste the output here:
+#   python3 -c "import base64;print(base64.b64encode('you@example.edu'[::-1].encode()).decode())"
+email_encoded: "dWRlLnd1QDc2a3JhcGI="
+# Hidden decoy address for bots (never shown to people; see _includes/footer.html)
+email_honeypot: "contact-admin@bumjunpark.com"
 image: /img/about/me.jpg   # preview image when the site is shared on social media / Slack
 
 # Shown in the header and under the About Me photo

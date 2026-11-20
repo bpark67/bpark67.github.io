@@ -4,8 +4,20 @@
         <div class="row">
             <div class="col-md-6 footer-contact">
                 <h3>Contact</h3>
-                <p>{{ site.department }}<br>{{ site.institution }}<br>
-                    <span class="footer-email">{{ site.email_display }}</span></p>
+                <p>{{ site.department }}<br>{{ site.institution }}</p>
+                <div class="email-reveal" data-email="{{ site.email_encoded }}">
+                    <button type="button" class="hold-btn" aria-describedby="hold-hint">
+                        <span class="hold-fill" aria-hidden="true"></span>
+                        <span class="hold-label"><i class="fa fa-envelope" aria-hidden="true"></i> Press and hold to show email</span>
+                    </button>
+                    <span id="hold-hint" class="sr-only">Keep pressing for about one second. Keyboard: hold Enter or Space.</span>
+                    <p class="email-revealed" aria-live="polite"></p>
+                    <noscript><p class="email-noscript">Turn on JavaScript to see my email address.</p></noscript>
+                </div>
+                {% if site.email_honeypot %}
+                <!-- Honeypot: hidden from people and screen readers; only scrapers that ignore CSS find it -->
+                <a class="hp-contact" href="mailto:{{ site.email_honeypot }}" tabindex="-1" aria-hidden="true" rel="nofollow">{{ site.email_honeypot }}</a>
+                {% endif %}
             </div>
             <div class="col-md-6 footer-social">
                 {% include social.html %}

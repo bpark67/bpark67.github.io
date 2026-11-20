@@ -1163,3 +1163,49 @@ ul.social-buttons li a { text-align: center; }
 .page-content .book-english { margin: 2px 0 0; font-size: 14px; font-style: italic; color: #{{ site.data.template.color.muted }}; }
 .page-content .book-author { margin: 8px 0 0; font-size: 14px; color: #{{ site.data.template.color.muted }}; }
 .page-content .book-note { margin: 10px 0 0; font-size: 15px; color: #{{ site.data.template.color.text-soft }}; }
+
+/* Press-and-hold email reveal (footer) */
+.email-reveal { margin: 4px 0 18px; }
+.hold-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: none;
+}
+.hold-btn:hover { border-color: rgba(255, 255, 255, .7); }
+.hold-fill {
+    position: absolute;
+    inset: 0;
+    width: 0;
+    background: #{{ site.data.template.color.primary }};
+    opacity: .85;
+}
+.hold-btn.holding .hold-fill { width: 100%; transition: width 1s linear; }
+.hold-label { position: relative; }
+.email-revealed { margin: 0; font-size: 15px; color: #fff; }
+.email-revealed:empty { display: none; }
+.copy-email {
+    margin-left: 10px;
+    padding: 1px 10px;
+    font-size: 12px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .45);
+    border-radius: 3px;
+}
+.copy-email:hover { border-color: #fff; }
+.email-noscript { font-size: 13px; color: #ccc; }
+@media (prefers-reduced-motion: reduce) {
+    .hold-btn.holding .hold-fill { transition: none; width: 100%; }
+}
+/* Honeypot link: never displayed */
+.hp-contact { display: none !important; }
